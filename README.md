@@ -22,7 +22,6 @@ WashWatch is a cross-platform mobile application (built with **Flutter**) that s
 ## 🛠️ Tech Stack
 * **Frontend:** [Flutter](https://flutter.dev/) (Dart) - for a seamless iOS & Android experience.
 * **Integration:** Mocked integration with LG Smart Solution API (Simulated IoT data).
-* **Backend:** [Firebase/Node.js - *edit based on what you actually used*]
 
 ## 💻 Getting Started
 To run this project locally, you will need the [Flutter SDK](https://docs.flutter.dev/get-started/install) installed.
