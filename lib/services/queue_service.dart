@@ -2,7 +2,7 @@ import 'package:uuid/uuid.dart';
 import '../models/queue_entry.dart';
 
 class QueueService {
-  static const Duration queueTimeoutWindow = Duration(seconds: 15); // 15 seconds for demo, easier to see queue progression
+  static const Duration queueTimeoutWindow = Duration(seconds: 10); // 10 seconds for demo, easier to see queue progression
 
   final Map<String, List<QueueEntry>> _queues = {};
 

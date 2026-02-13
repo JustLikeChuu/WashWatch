@@ -53,14 +53,14 @@ class _PaymentScreenState extends State<PaymentScreen> {
             userId: currentUser.matricId,
             machineId: widget.machine.id,
             startTime: DateTime.now(),
-            estimatedDuration: const Duration(seconds: 30),
+            estimatedDuration: const Duration(seconds: 10),
           );
 
           // Update machine status
           context.read<MachineProvider>().setMachineInUse(
             widget.machine.id,
             currentUser.matricId,
-            const Duration(seconds: 30),
+            const Duration(seconds: 10),
           );
 
           // Set active booking
@@ -150,7 +150,7 @@ class _PaymentScreenState extends State<PaymentScreen> {
                             children: [
                               _buildDetailRow('Machine:', widget.machine.name),
                               const SizedBox(height: 12),
-                              _buildDetailRow('Duration:', '30 seconds'),
+                              _buildDetailRow('Duration:', '10 seconds'),
                               const SizedBox(height: 12),
                               _buildDetailRow('Price:', '\$5.00'),
                             ],

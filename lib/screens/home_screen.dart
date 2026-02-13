@@ -36,7 +36,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
     // Start with demo_user_1 using the machine for 15 seconds
     // After 15 seconds, machine will be free and demo_user_1 will be removed from queue
-    machineProvider.setMachineInUse('M001', 'demo_user_1', const Duration(seconds: 15));
+    machineProvider.setMachineInUse('M001', 'demo_user_1', const Duration(seconds: 10));
 
     // Immediately mark demo_user_1 as notified (they're the current user)
     queueProvider.markUserAsNotified('demo_user_1', 'M001');

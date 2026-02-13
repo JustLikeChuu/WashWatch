@@ -81,7 +81,7 @@ class _QueuePositionScreenState extends State<QueuePositionScreen> {
               _machineProvider.setMachineInUse(
                 widget.machine.id,
                 nextUser.userId,
-                const Duration(seconds: 15),
+                const Duration(seconds: 10),
               );
             });
           }
@@ -123,11 +123,11 @@ class _QueuePositionScreenState extends State<QueuePositionScreen> {
               // REMOVE FROM QUEUE FIRST - this is critical so next person gets position 0
               _queueProvider.removeFromQueue(currentUser.matricId, widget.machine.id);
               
-              // Auto-start the wash for 15 seconds
+              // Auto-start the wash for 10 seconds
               _machineProvider.setMachineInUse(
                 widget.machine.id,
                 currentUser.matricId,
-                const Duration(seconds: 15),
+                const Duration(seconds: 10),
               );
             }
           });
